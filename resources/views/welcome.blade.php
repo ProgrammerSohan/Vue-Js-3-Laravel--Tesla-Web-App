@@ -13,7 +13,10 @@
     </head>
     <body >
         <h1>Laravel 8 Vue Js 3</h1>
-        <div id="app"></div>
+        <div id="app">
+            <app> </app>
+
+        </div>
         <script src="{{mix('js/app.js')}}"></script>
 
     </body>
