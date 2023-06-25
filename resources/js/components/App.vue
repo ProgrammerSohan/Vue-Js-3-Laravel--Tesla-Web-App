@@ -1,12 +1,40 @@
 <template>
-    <h2>vue 3 component</h2>
-    <p>Sohan Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dignissimos cum blanditiis qui. Dignissimos, repudiandae enim, neque maiores tenetur reprehenderit possimus, nobis dolores dolorem iusto nostrum ab odit animi quia.</p>
+    <div>
+        <h1 style="margin-top:200px;text-align:center;">Todo List</h1>
+        <div class="todoListContainer">
+            <add-item-form/>
+            <list-view/>
+
+
+        </div>
+    </div>
+
+
 </template>
+
+
 <script>
+   import addItemForm from './addItemForm'
+   import listView from './listView'
+
+
     export default {
+        components:{
+            addItemForm,
+            listView
+        }
+
 
     }
 </script>
-<style>
+<style scoped>
+.todoListContainer{
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
+
 
 </style>
